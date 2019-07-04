@@ -1,0 +1,88 @@
+// MIXIM LEGACY
+//==============================================================================
+
+@mixin opacity($val) {
+  opacity: $val;
+}
+
+@mixin border-radius($val) {
+  border-radius: $val;
+}
+
+@mixin transition($vals...) {
+  transition: #{$vals};
+}
+
+@mixin vertical-align($position: relative, $top: 50%, $translateY:50%) {
+  position: $position;
+  top: $top;
+  -webkit-transform: translateY(-$translateY);
+  -ms-transform: translateY(-$translateY);
+  transform: translateY(-$translateY);
+}
+
+
+// TEXT INPUT FIELDS
+// =============================================================================
+@mixin text-input($border-color: $grey,$border-focus-color: $focus-color) {
+  background-color: #fff;
+  border-color: $border-color;
+  border-style: solid;
+  border-width: 1px;
+  color: $body-text;
+  border-radius: 20px;
+  font-size: 14px;
+  line-height: 1em;
+  &:focus {
+    border-color: $border-focus-color;
+  }
+}
+
+
+// CLEARFIX MIXINS
+// =============================================================================
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin after {
+  @include clearfix;
+}
+
+
+// FLEXBOX RELATED MIXINS
+// =============================================================================
+
+
+@mixin flex {
+  display: flexbox;
+  display: flex;
+}
+
+@mixin flex-basis($val) {
+  flex-basis: $val;
+}
+
+@mixin align-items($val) {
+  align-items: $val;
+}
+
+@mixin align-content($val) {
+  align-content: $val;
+}
+
+@mixin flex-grow($val) {
+  flex-grow: $val;
+}
+
+@mixin justify-content($val) {
+  justify-content: $val;
+}
+
+@mixin flex-wrap($val) {
+  flex-wrap: $val;
+}
