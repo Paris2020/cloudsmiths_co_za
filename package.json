@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Portfolio website for Nelly Moseki",
   "main": "gulpfile.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.9.0",
     "breakpoint-sass": "^2.7.1",
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
@@ -13,7 +15,6 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
