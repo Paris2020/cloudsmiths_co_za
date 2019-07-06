@@ -1,19 +1,19 @@
 {
-  "name": "cloudsmiths",
+  "name": "Crop Top in The Reign",
   "version": "1.0.0",
-  "description": "Assessment project for CloudSmiths",
+  "description": "Portfolio Website",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Paris2020/cloudsmiths_co_za.git"
+    "url": "git+https://github.com/Paris2020/croptop_co_za.git"
   },
   "author": "Nelly Moseki",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Paris2020/cloudsmiths_co_za/issues"
+    "url": "https://github.com/Paris2020/croptop_co_za/issues"
   },
-  "homepage": "https://github.com/Paris2020/cloudsmiths_co_za#readme"
+  "homepage": "https://github.com/Paris2020/croptop_co_za#readme"
 }
