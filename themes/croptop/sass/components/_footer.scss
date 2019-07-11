@@ -1,0 +1,50 @@
+// FOOTER SECTION
+// =============================================================================
+
+
+footer{
+  display: block;
+  .inner{
+    width: 70%;
+    margin: 0 auto;
+    .f-top{
+      text-align: center;
+      .big-thanks{
+        .big-elephant{
+          background: url('../croptop/src/images/thanks_supporting.png') no-repeat center;
+          width: 250px;
+          margin: 0 auto;
+          background-size: cover;
+          height: 500px;
+        }
+        .thank-you{
+
+        }
+      }
+      .social-links{
+        ul{
+          padding-left: 0;
+          li{
+            margin: 0 20px;
+            display: inline-block;
+            &:hover{
+              a{
+                color: $black;
+              }
+            }
+          }
+        }
+      }
+    }
+    .f-bottom{
+      text-align: center;
+      a{
+        font-size: 10px;
+        span{
+          display:block;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}

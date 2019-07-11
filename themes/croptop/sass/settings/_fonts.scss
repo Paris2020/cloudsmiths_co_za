@@ -1,0 +1,17 @@
+// BASE FONTS
+// =============================================================================
+$base-font-size:    16px;
+$base-line-height:  28px;
+
+// FONT INCLUDES / FONTFACE
+// =============================================================================
+
+$font-family: 'Nilland-Black';
+
+// FONT INCLUDES
+// =============================================================================
+@font-face {
+  font-family: 'Nilland-Black';
+  font-style: normal;
+  src: url('fonts/Nilland-Black.ttf') format('truetype');
+}
