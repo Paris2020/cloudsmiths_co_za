@@ -5,6 +5,15 @@
   opacity: $val;
 }
 
+/*@mixin animation($val...){
+
+  @keyframes action {
+    0% { transform: translateY($val); }
+    100% { transform: translateY($val); }
+  }
+}*/
+
+
 @mixin border-radius($val) {
   border-radius: $val;
 }
