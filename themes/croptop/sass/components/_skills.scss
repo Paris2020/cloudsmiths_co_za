@@ -2,5 +2,14 @@
 // =============================================================================
 
 .skills{
-	
+	.items{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		text-align: center;
+		.item{
+			flex: 0 0 30%;
+			padding: 0 15px;
+		}
+	}
 }
