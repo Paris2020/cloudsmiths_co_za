@@ -1,6 +1,6 @@
 // GUTTERS
 // =============================================================================
-$gutter: 15px;
+$gutter: 20px;
 $gutter2: 30px;
 
 // GRID STYLING
@@ -19,7 +19,15 @@ body{
 	  }
 	  section{
 	  	width: 70%;
-    	margin: 0 auto;
+    	margin: $gutter*2 auto;
+    	h1{ 
+    		margin: $gutter*2 0 0;
+    		font-size: 80px;
+    	}
+    	h2{
+    		font-size: $gutter;
+    		margin-bottom: $gutter;
+    	}
 	  }
 	}
 }
