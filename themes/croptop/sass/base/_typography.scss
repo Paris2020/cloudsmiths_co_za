@@ -1,30 +1,3 @@
-// FONT INCLUDES
-// =============================================================================
-
-
-// FONT MIXINS
-// =============================================================================
-@mixin font-light {
-  font-family: $font-family;
-  font-weight: 300;
-}
-
-@mixin font-regular {
-  font-family: $font-family;
-  font-weight: 400;
-}
-
-@mixin font-semibold {
-  font-family: $font-family;
-  font-weight: 600;
-}
-
-@mixin font-bold {
-  font-family: $font-family;
-  font-weight: 700;
-}
-
-
 // BASE FONT
 // =============================================================================
 html {
@@ -44,6 +17,10 @@ h6 {
 	color: $white;
 }
 
+h1,h2{
+	text-align: center;
+}
+
 // TEXT STYLES
 // =============================================================================
 b, strong { font-weight: bold; }
@@ -54,7 +31,7 @@ p{
   font-size: 14px;
   font-weight: 100;
   line-height: 24px;
-  margin: 20px 0;
+  margin: $gutter 0;
 }
 
 sup, sub {
