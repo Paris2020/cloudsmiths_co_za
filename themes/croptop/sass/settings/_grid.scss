@@ -17,17 +17,5 @@ body{
 	    padding-left: $gutter/2;
 	    padding-right: $gutter/2;
 	  }
-	  section{
-	  	width: 70%;
-    	margin: $gutter*2 auto;
-    	h1{ 
-    		margin: $gutter*2 0 0;
-    		font-size: 80px;
-    	}
-    	h2{
-    		font-size: $gutter;
-    		margin-bottom: $gutter;
-    	}
-	  }
 	}
 }
