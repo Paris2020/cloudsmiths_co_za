@@ -13,6 +13,9 @@
   }
 }*/
 
+@mixin box-shadow($vals...) {
+  box-shadow: #{$vals}
+}
 
 @mixin border-radius($val) {
   border-radius: $val;
@@ -23,6 +26,10 @@
 
 @mixin transition($vals...) {
   transition: #{$vals};
+}
+
+@mixin transform($val){
+  transform: scale($val);
 }
 
 @mixin vertical-align($position: relative, $top: 50%, $translateY:50%) {
