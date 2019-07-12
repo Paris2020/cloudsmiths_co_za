@@ -3,9 +3,11 @@
 - Plugins used are:
 -- jqFloat.js
 -- owlCarousel.js
+-- Lettering.js
 */
 $(function(){
 
+	$(".section-title").lettering();
 
 });
 
