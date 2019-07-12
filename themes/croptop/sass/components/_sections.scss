@@ -1,0 +1,15 @@
+section{
+	width: 70%;
+	margin: $gutter*2 auto;
+  .proj-wrapper{
+    margin-top: $gutter*2;
+  	h1{ 
+  		margin: $gutter*2 0 0;
+  		font-size: 80px;
+  	}
+  	h2{
+  		font-size: $gutter;
+  		margin-bottom: $gutter;
+  	}
+  }
+}
