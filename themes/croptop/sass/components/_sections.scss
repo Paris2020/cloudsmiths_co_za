@@ -1,9 +1,13 @@
+// SECTIONS
+// ============================================================
+
+
 section{
 	width: 70%;
 	margin: $gutter*2 auto;
   .proj-wrapper{
     margin-top: $gutter*2;
-  	h1{ 
+  	h1.section-title{ 
   		margin: $gutter*2 0 0;
   		font-size: 80px;
   	}
