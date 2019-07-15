@@ -1,2 +1,13 @@
 // CONTACT SECTION/PAGE
 // =============================================================================
+
+.wod{
+  .video-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    .video{
+      flex: 0 0 33.11%;
+    }
+  } 
+}
