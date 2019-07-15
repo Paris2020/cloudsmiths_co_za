@@ -3,13 +3,14 @@
 
 .portfolio,
 .skills,
-.aboutme{
+.aboutme,
+.wod{
   @include clearfix;
 	width: 70%;
 	margin: $gutter*2 auto;
   .proj-wrapper{
     margin-top: $gutter*2;
-  	h1{ 
+  	h2{ 
   		margin: $gutter*2 0 0;
   		font-size: 80px;
   	}
@@ -17,5 +18,25 @@
   		font-size: $gutter;
   		margin-bottom: $gutter;
   	}
+  }
+}
+
+.fixed {
+  position: fixed;
+  top: 20%;
+  bottom: 0;
+  width: 60px;
+  .social-links{
+    background-color: $black;
+    @include transition(all 0.3s ease);
+    li{ 
+      text-align: center;
+      padding: $gutter/2 0;
+      a{ @include transition(all 0.3s ease); }
+      &:hover{
+        background-color: $white;
+        a{ color: $black; }
+      }
+    }
   }
 }
