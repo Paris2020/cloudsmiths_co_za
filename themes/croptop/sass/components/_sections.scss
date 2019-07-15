@@ -5,27 +5,34 @@
 .skills,
 .aboutme,
 .wod{
-  @include clearfix;
 	width: 70%;
+  @include clearfix;
 	margin: $gutter*2 auto;
+  h1{ 
+    margin: $gutter*2 0 0;
+    font-size: $gutter*4;
+    text-transform: uppercase;
+    span[class^="char"]{
+      margin-right: $gutter;
+    }
+  }
+  h2{
+    font-size: $gutter;
+    margin-bottom: $gutter;
+  }
   .proj-wrapper{
     margin-top: $gutter*2;
-  	h2{ 
-  		margin: $gutter*2 0 0;
-  		font-size: 80px;
-  	}
-  	h2{
-  		font-size: $gutter;
-  		margin-bottom: $gutter;
-  	}
   }
 }
 
-.fixed {
+/*
+- Social media section on the left side of the screen fixed
+*/
+.fixed-links {
   position: fixed;
   top: 20%;
   bottom: 0;
-  width: 60px;
+  width: $gutter*3;
   .social-links{
     background-color: $black;
     @include transition(all 0.3s ease);
