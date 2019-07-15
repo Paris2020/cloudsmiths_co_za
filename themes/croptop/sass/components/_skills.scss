@@ -1,7 +1,6 @@
 // SERVICES SECTION/PAGE
 // =============================================================================
 
-
 .skills{
   .items{
     display: flex;
@@ -11,17 +10,18 @@
     .item{
       flex: 0 0 18%;
       margin-bottom: $gutter;
-        margin-right: $gutter;
-        border: 1px solid;
-        padding: 5px;
-        @include border-radius(5px);
-        @include transition(all 0.3s ease);
-        i{ @include transition(all 0.3s ease); }
-        &:hover{
-          @include transform(1.1);
-          i{ color: $white; }
-          border-color: $white;
-        }
+      margin-right: $gutter;
+      border: 1px solid;
+      padding: 5px;
+      @include border-radius(5px);
+      @include transition(all 0.3s ease);
+      i{ @include transition(all 0.3s ease); }
+      &:hover{
+        @include transform(1.1);
+        i{ color: $white; }
+        border-color: $white;
+      }
     }
   }
 }
+
