@@ -14,7 +14,7 @@ $(function(){
   - Onload bounce the h1 section letters
   */
 
-    $('.section-title').effect("bounce", {
+    /*$('.section-title').effect("bounce", {
       times: 4,
       distance: 200
     }, 400).click(function() {
@@ -22,6 +22,6 @@ $(function(){
         times: 4,
         distance: 200
       }, 400);
-    });
+    });*/
 
 });
