@@ -13,8 +13,11 @@
     font-size: $gutter*4;
     text-transform: uppercase;
     span[class^="char"]{
+      @include transition(all 0.3s ease);
       margin-right: $gutter;
-      @include box-shadow($white -4px 4px 0);
+      &:hover{
+        @include transform(1.1);
+      }
     }
   }
   h2{
@@ -48,3 +51,7 @@
     }
   }
 }
+
+
+
+
