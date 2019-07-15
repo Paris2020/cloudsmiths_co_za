@@ -1,2 +1,18 @@
 // ABOUT SECTION/PAGE
 // =============================================================================
+
+.aboutme{
+	padding: $gutter/2;
+  .text-wrapper{
+    float: left;
+    width: 60%;
+  }
+  .img-wrapper{
+    background: url('src/images/NellyMoseki.jpeg') no-repeat top center;
+    background-size: cover;
+    float: right;
+    width: 35%;
+    height: 400px;
+    border-radius: 50%;
+  }
+}
