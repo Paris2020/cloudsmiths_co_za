@@ -8,14 +8,17 @@ $gutter2: 30px;
 body{
   margin: 0;
   background-color: $blue;
-
   .grid {
-	  clear: both;
-	  padding-left: $gutter;
-	  padding-right: $gutter;
-	  @include breakpoint($tablet){
-	    padding-left: $gutter/2;
-	    padding-right: $gutter/2;
-	  }
-	}
+    clear: both;
+    padding-left: $gutter;
+    padding-right: $gutter;
+    @include breakpoint($tablet){
+      padding-left: $gutter/2;
+      padding-right: $gutter/2;
+    }
+    .contenty-wrapper{
+      margin-top: 60px;
+    }
+  }
 }
+
