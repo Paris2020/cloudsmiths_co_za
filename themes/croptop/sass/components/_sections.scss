@@ -14,6 +14,7 @@
     text-transform: uppercase;
     span[class^="char"]{
       margin-right: $gutter;
+      @include box-shadow($white -4px 4px 0);
     }
   }
   h2{
