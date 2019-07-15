@@ -2,23 +2,21 @@
 // =============================================================================
 
 .aboutme{
-  padding: $gutter/2;
   position: relative;
   .text-wrapper{
     float: left;
     width: 60%;
-    padding: 30px;
     @include transition(all 0.3s ease);
   }
   .img-wrapper{
     background: url('src/images/NellyMoseki.jpeg') no-repeat top center;
     background-size: cover;
     float: right;
-    width: 26%;
-    height: 300px;
+    width: 30%;
+    height: 330px;
     position: absolute;
     left: 65%;
-    top: 15%;
+    top: 30%;
     @include border-radius(50%);
     @include transition(all 0.3s ease);
     &:hover{
