@@ -1,13 +1,15 @@
 // SECTIONS
 // ============================================================
 
-
-section{
+.portfolio,
+.skills,
+.aboutme{
+  @include clearfix;
 	width: 70%;
 	margin: $gutter*2 auto;
   .proj-wrapper{
     margin-top: $gutter*2;
-  	h1.section-title{ 
+  	h1{ 
   		margin: $gutter*2 0 0;
   		font-size: 80px;
   	}
