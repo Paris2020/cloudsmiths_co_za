@@ -24,25 +24,10 @@ footer{
           width: 450px;
         }
       }
-      .social-links{
-        margin-bottom: $gutter;
-        ul{
-          padding-left: 0;
-          li{
-            margin: 0 $gutter;
-            display: inline-block;
-            a{ @include transition(all 0.3s ease); }
-            &:hover{
-              a{
-                color: $black;
-              }
-            }
-          }
-        }
-      }
     }
     .f-bottom{
       text-align: center;
+      margin-bottom: $gutter;
       a{
         font-size: 10px;
         span{
