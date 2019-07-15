@@ -10,6 +10,7 @@ footer{
     .f-top{
       text-align: center;
       .big-thanks{
+        margin-bottom: $gutter;
         .big-elephant{
           background: url('../croptop/src/images/thanks_supporting.png') no-repeat center;
           width: 250px;
@@ -18,14 +19,17 @@ footer{
           height: 500px;
         }
         .thank-you{
-
+          background: url('../croptop/src/images/INI_ThankYou.svg') no-repeat center;
+          background-size: cover;
+          width: 450px;
         }
       }
       .social-links{
+        margin-bottom: $gutter;
         ul{
           padding-left: 0;
           li{
-            margin: 0 20px;
+            margin: 0 $gutter;
             display: inline-block;
             a{ @include transition(all 0.3s ease); }
             &:hover{
