@@ -1,41 +1,40 @@
 // PORTFOLIO SECTION
 //==================================================
-
 .portfolio{
-	ul{
-		display: flex;
-		flex-flow: row wrap;
-		align-content: flex-start; 
-		li{
-			@include box-shadow(1px 1px 10px $box-grey);
-			background-color: $white;
-			flex: 0 0 30%;
-			margin-bottom: 15px;
-			margin-right: 15px;
-			.teaser{
-				text-align: center;
-				h3{
-					color: $black;
-					text-transform: uppercase;
-				}
-				.icon{
-					padding-top: $gutter/2;
-					i,span{
-						margin-bottom: $gutter/2;
-					    display: block;
-					    font-size: 14px;
-					}
-				}
-				.summary{
-					width: 250px;
-					margin: auto;
-					.view{
-						@include button($blue);
-						align-items: baseline; 
-					}
-				}
-			}
-		}
-	}
+  ul{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start; 
+    li{
+      @include box-shadow(1px 1px 10px $box-grey);
+      background-color: $white;
+      flex: 0 0 30%;
+      margin-bottom: 15px;
+      margin-right: 15px;
+      .teaser{
+        text-align: center;
+        h3{
+          color: $black;
+          text-transform: uppercase;
+        }
+        .icon{
+          padding-top: $gutter/2;
+          i,span{
+            margin-bottom: $gutter/2;
+              display: block;
+              font-size: 14px;
+          }
+        }
+        .summary{
+          width: 250px;
+          margin: auto;
+          .view{
+            @include button($blue);
+            align-items: baseline; 
+          }
+        }
+      }
+    }
+  }
 }
 
