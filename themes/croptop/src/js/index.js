@@ -10,7 +10,7 @@
 
   $(".section-title").lettering();
 
-  /*
+  /**
     - Make the title character bounce onload of the page
   */
   $('.section-title').effect("bounce", {
@@ -23,7 +23,7 @@
     }, 400);
   });
 
-  /*
+  /**
     - Slow scroll to Anchors
   */
   $('a[href^="#"]').on('click', function(e){
@@ -38,6 +38,14 @@
       }, 900, 'swing', function () {
           window.location.hash = target;
       });
+  });
+
+  /**
+  * - Masonry Library
+  * - Add masonry to portfolio section
+  */
+  $('.portfolio .proj-wrapper').masonry({
+    itemSelector: '.item',
   });
 
 });
