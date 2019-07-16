@@ -5,7 +5,7 @@
     display: flex;
     flex-flow: row wrap;
     align-content: flex-start; 
-    li{
+    li.item{
       @include box-shadow(1px 1px 10px $box-grey);
       background-color: $white;
       flex: 0 0 30%;
@@ -35,7 +35,8 @@
         }
       }
       &:nth-child(3n+3){
-        margin: 0;
+        margin-left: 0;
+        margin-right: 0;
       }
     }
   }
