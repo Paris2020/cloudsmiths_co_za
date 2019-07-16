@@ -8,5 +8,6 @@ a:visited, {
   color: $link;
   &:hover {
     text-decoration: none;
+    @include transition(all 0.3s ease 0s);
   }
 }
