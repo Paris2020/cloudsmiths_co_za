@@ -16,7 +16,8 @@
     "gulp-connect-php": "^1.0.3",
     "gulp-css-globbing": "^0.2.2",
     "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.5"
+    "gulp-sourcemaps": "^2.6.5",
+    "masonry-layout": "^4.2.2"
   },
   "repository": {
     "type": "git",
