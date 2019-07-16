@@ -32,6 +32,14 @@
   transform: scale($val);
 }
 
+@mixin transformX($val){
+  transform: translateX($val);
+}
+
+@mixin transformY($val){
+  transform: translateY($val);
+}
+
 @mixin vertical-align($position: relative, $top: 50%, $translateY:50%) {
   position: $position;
   top: $top;
@@ -55,6 +63,10 @@
   &:focus {
     border-color: $border-focus-color;
   }
+}
+
+@mixin text-shadow($val...){
+  text-shadow: #{$val};
 }
 
 
