@@ -9,7 +9,7 @@
   @include clearfix;
 	margin: $gutter*5 auto;
   h1{ 
-    margin: $gutter*2 0 0;
+    margin: $gutter*2 0 $gutter*2;
     font-size: $gutter*4;
     text-transform: uppercase;
     span[class^="char"]{
