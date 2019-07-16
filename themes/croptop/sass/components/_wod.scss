@@ -2,12 +2,130 @@
 // =============================================================================
 
 .wod{
-  .video-wrapper{
-    display: flex;
-    flex-flow: row wrap;
-    align-content: flex-start;
-    .video{
-      flex: 0 0 33.11%;
+
+  .yellow-bg{
+    position: relative;
+    /*&:before{
+      left: -50vw;
+      margin-left: 10px;
+      @include rotate(7deg);
+      background: linear-gradient(200deg,$gradientA,$gradientB,$gradientC,$gradientD);
     }
-  } 
+    &:after{
+      right: -50vw;
+      margin-right: 10px;
+      @include rotate(-7deg);
+      background: -webkit-gradient(linear,left top,right top,color-stop(50%,#fdb916),
+                  color-stop(78%,#ffd400),color-stop(75%,#ffd400),color-stop(115%,#faa61a));
+      background: linear-gradient(90deg,$gradientA,$gradientB,$gradientC,$gradientD);
+    }
+    &:before,
+    &:after{
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100vw;
+      height: 8vw;
+      bottom: -1px;
+      background: $yellowGradient;
+    }*/
+    .js-video-container{
+      position: relative;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      .field-image{
+        line-height: 0;
+        height: 600px;
+        .video-thumb{
+          background: url('src/images/NellyMosekiFB.jpg') no-repeat center;
+          background-size: cover;
+          height: 600px;
+          width: auto;
+        }
+      }
+      .image-overlay{
+        background-color: rgba(0,0,0,.5);
+        border-top: 5px solid $yellowGradient;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+      .text-wrapper{
+        bottom: 35%;
+        left: 50%;
+        width: 45%;
+        position: absolute;
+        text-align: center;
+        @include transformX(-50%);
+        .video-play-btn{
+          width: 125px;
+          height: 125px;
+          margin: 0 auto $gutter;
+          display: block;
+          border: 4px solid $yellowGradient;
+          @include border-radius(50%);
+          text-transform: uppercase;
+          text-align: center;
+          font-weight: 600;
+          font-size: 25px;
+          color: $yellowGradient;
+          padding-top: 46px;
+          cursor: pointer;
+          @include text-shadow(2px 2px 2px rgba(0,0,0,.25));
+          @include box-shadow(1px 1px 2px 0 rgba(0,0,0,.25));
+        }
+        p{
+          text-align: center;
+          color: $white;
+        }
+      }
+      .video-overlay{
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99999;
+        position: fixed;
+        visibility: hidden;
+        @include transition(opacity .5s ease);
+        background: rgba(25,25,25,.8);
+        .video-close-btn{
+          top: 180px;
+          right: 30px;
+          width: 54px;
+          height: 54px;
+          display: block;
+          position: fixed;
+          background: $white;
+          @include border-radius(50%);
+        }
+        .video-wrapper{
+          top: 66%;
+          left: 50%;
+          width: 70vw;
+          height: 40vw;
+          position: fixed;
+          margin: -28vw 0 0 -35vw;
+          .responsive-video{
+            position: relative;
+            video{
+              position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
 }
+
