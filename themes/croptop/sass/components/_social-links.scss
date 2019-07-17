@@ -1,0 +1,61 @@
+//
+// =============================================================
+
+
+.desk-social,
+.mobile-social{
+  .social-links{
+    @include transition(all 0.3s ease);
+    li{
+      a{ @include transition(all 0.3s ease); }
+      &:hover{
+        background-color: $white;
+        a{ color: $black; }
+      }
+    }
+  }
+}
+
+
+/*
+- Social media section on the left side of the screen fixed
+*/
+.desk-social {
+  position: fixed;
+  top: 20%;
+  bottom: 0;
+  width: $gutter*3;
+  @include breakpoint($mobile){
+    display: none;
+  }
+  .social-links{
+    background-color: $black;
+    li{ 
+      text-align: center;
+      padding: $gutter/2 0;
+      &:hover{
+        background-color: $white;
+        a{ color: $black; }
+      }
+    }
+  }
+}
+
+
+/*
+  - Mobile social links
+*/
+.mobi-social{
+  background-color: $black;
+  width: 100%;
+  padding: 5px 0;
+  @include breakpoint($tablet-up){
+    display: none;
+  }
+  .social-links{
+    li{ 
+      padding: 0 $gutter/2;
+      display: inline;
+    }
+  }
+}
