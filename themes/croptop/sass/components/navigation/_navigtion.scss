@@ -1,0 +1,103 @@
+// NAVIAGTION
+//=======================================================
+
+/*
+- Desktop navigation
+*/
+.desktop-nav{
+  width: 70%;
+  margin: 0 auto;
+  @include breakpoint($tablet-up){
+    display: none;
+  }
+  ul{
+    margin: 0;
+    padding: 18px 0;
+    @include breakpoint($mobile){
+      float: none;
+    }
+    li{
+      margin: 0 50px;
+      display: inline-block;
+      a{
+        font-size: 14px;
+        text-transform: uppercase;
+        @include transition(all 0.3s ease);
+      }
+      &:hover{
+        a{
+          color: $blue;
+        }
+      }
+    }
+  }
+  ul.first{
+    float: left; 
+  }
+  ul.second{
+    float: right;
+  }
+  a.logo{
+    position: relative;
+    img{
+      margin: 18px 0;
+      width: $gutter*2;
+    }
+    &:before,
+    &:after{
+      content: "";
+      height: 70px;
+      width: 70px;
+      position: absolute;
+      display: inline-block;
+      background: url('../croptop/src/images/icons/line_cir.png') no-repeat scroll 0 0;
+    }
+    &:after{
+      @include rotate(180deg);
+      bottom: 26px;
+      right: -100px;
+      @include breakpoint($mobile){
+        bottom: -118px;
+        right: 50px;
+
+      }
+    }
+    &:before{
+      @include rotate(0deg);
+      top: -20px;
+      left: -100px;
+      @include breakpoint($mobile){
+        top: 125px;
+        left: -270px;
+      }
+    }
+  }
+}
+
+
+// MOBILE NAVIGATION
+// ===================================================
+
+/*.mobile-nav{
+  @include breakpoint($tablet-up){
+    display: none;
+  }
+  width: 100%;
+  margin: $gutter auto;
+  ul{
+    li{
+      margin: 0 50px;
+      display: inline-block;
+      a{
+        font-size: 14px;
+        text-transform: uppercase;
+        @include transition(all 0.3s ease);
+      }
+      &:hover{
+        a{
+          color: $blue;
+        }
+      }
+    }
+  }
+}*/
