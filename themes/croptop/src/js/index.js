@@ -48,4 +48,15 @@
     itemSelector: '.item',
   });
 
+
+  /*
+  * Hamburger
+  * - Toggle sf-expanded
+  */
+  $('.menu-toggle').click(function(e) {
+    $('.menu-toggle').toggleClass('sf-expanded');
+    $('#nav').toggleClass('sf-expanded');
+    //$('.social').toggleClass('sf-expanded');
+  });
+
 });
