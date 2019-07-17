@@ -29,30 +29,3 @@
     margin-top: $gutter*2;
   }
 }
-
-/*
-- Social media section on the left side of the screen fixed
-*/
-.fixed-links {
-  position: fixed;
-  top: 20%;
-  bottom: 0;
-  width: $gutter*3;
-  .social-links{
-    background-color: $black;
-    @include transition(all 0.3s ease);
-    li{ 
-      text-align: center;
-      padding: $gutter/2 0;
-      a{ @include transition(all 0.3s ease); }
-      &:hover{
-        background-color: $white;
-        a{ color: $black; }
-      }
-    }
-  }
-}
-
-
-
-
